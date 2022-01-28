@@ -1,0 +1,56 @@
+.artCustom {
+    color:darkred;
+    background-color: chartreuse;
+    font-weight: bold;
+}
+
+.artForNgStyle {
+    background-color:maroon;
+    color: aliceblue;
+    font-size: large;
+    margin-left: 20%;
+}
+
+.artForNgClass {
+    background-color: rgb(201, 172, 172);
+    color: aqua;
+}
+
+.centered-text {
+    text-align: center
+}
+
+.underlined {
+    border-bottom: 1px solid green
+}
+
+.dupa {
+    font-style: italic;
+}
+
+.artFirstStyle {
+border-radius: 2%;
+border-style: groove;
+color: darkslategrey;
+background-color:deepskyblue
+}
+
+.artSecondStyle {
+    border-style:dotted;
+    color: blue;
+    font-style: italic;
+    background-color:red
+    }
+
+    .artThirdStyle {
+        border-style: solid;
+        color: black;
+        background-color:green;
+        font-weight: bolder;
+        }
+
+        .default{
+            color: black;
+            background-color:white;
+            font-style: italic;
+        }

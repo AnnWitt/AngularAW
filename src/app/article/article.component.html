@@ -1,12 +1,53 @@
 
-<p>Pochodząca z Londynu Anne Stokes karierę rozpoczynała jako projektantka gadżetów pracująca dla zespołów muzycznych 
+
+<!-- <input type="button" styleNumber> -->
+ <button (click)="styleClassNumber = 1" class="mr-5 btn btn-secondary">artFirstStyle</button>
+ <button (click)="styleClassNumber = 2" class="mr-5 btn btn-secondary">artSecondtStyle</button>
+ <button (click)="styleClassNumber = 3" class="mr-5 btn btn-secondary">artThirdStyle</button>
+<br>
+<br>
+
+ <!-- <div>
+    <div [ngSwitch]="styleClassNumber">
+        <div *ngSwitchCase="'1'" CustomStyleClass="artFirstStyle" someNumber = '1'>{{forStyleChanging}} -> {{someNumber}}</div>
+        <div *ngSwitchCase="'2'" CustomStyleClass="artSecondStyle" someNumber='2'>{{forStyleChanging}}-> {{someNumber}}</div>
+        <div *ngSwitchCase="'3'" CustomStyleClass="artThirdStyle" someNumber='3'>{{forStyleChanging}}-> {{someNumber}}</div>
+    </div>
+<div class="CustomStyleClass">Uzależnione od zmiennej {{forStyleChanging}}</div>
+ <div>Numer stylu {{styleClassNumber}} some number {{someNumber}}</div> -->
+
+ <div>
+    <div [ngSwitch]="styleClassNumber">
+        <div *ngSwitchCase="'1'" class="artFirstStyle">{{forStyleChanging}}</div>
+        <div *ngSwitchCase="'2'" class="artSecondStyle">{{forStyleChanging}}</div>
+        <div *ngSwitchCase="'3'" class="artThirdStyle">{{forStyleChanging}}</div>
+    </div>
+
+ 
+<p style="color:gold"> (teskt wpisany w html) Pochodząca z Londynu Anne Stokes karierę rozpoczynała jako projektantka gadżetów pracująca dla zespołów muzycznych 
 m. in. Queen i Rolling Stones. Jako projektant biżuterii i rzeźbiarz wykonywała przedmioty na potrzeby uniwersów Świata 
 Dysku Terry'ego Pratchetta i Harrego Pottera. </p>
+<div [ngStyle]="{'background-color':'green'}">---'background-color':'green'---</div>
+<div [ngStyle]="['artForNgStyle: true']"> styl z artForNgStyle</div>
+-------------------------->
+<p [ngClass]="{artForNgClass: true, dupa: true, 'centered-text': true}" >ng class 1</p>
+<div [ngClass]="['artForNgClass', 'dupa', 'centered-text']" >ng class 1 inny zapis</div>
+<p [ngClass]="['centered-text', 'underlined']" class="artCustom">Tekst wyedytowany ngClass2</p>
+<div class=artCustom>{{annestokes}} "formatowanie w artCustom"</div>
+(powyżej) Item article z patenta poprzez dziecko (art component html)<br>
 
-{{annestokes}}
-<br>
-<br>
-Item article z patenta poprzez dziecko
+----------------------------------------------------------------
 <p>{{itemArticle}}</p>
-<br>
+-----------------------------------------------------------------
+<p>{{zZadan}}</p>
+
+
+
+
+
+
+
+
+
+
 
